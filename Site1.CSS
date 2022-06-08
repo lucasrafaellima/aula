@@ -105,16 +105,28 @@ img {
     padding-top: 20px;
 }
 
-.hero2 li {
+.list {
     list-style: none;
-    padding-right: 40px;
-    font-size: 20px;
-    background-color: rgb(136, 133, 133);
+    padding: 10px;
+    font-size: 28px;
+    background-color: rgb(129, 129, 129);
     margin-left: 20%;
     margin-right: 25%;
+    margin-top: 5px;
     text-align: left;
+    border-bottom: 3px solid black;
+}
+
+.list:hover .sublist {
+    display: block;
+    margin-top: 2px;
+}
+
+.sublist {
     box-sizing: border-box;
-    box-shadow: 6px -7px 1px rgb(255, 255, 255);
+    display: none;
+    padding-top: 10px;
+    padding-right: 30px;
 }
 
 .rodape {
