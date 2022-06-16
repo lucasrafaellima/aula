@@ -17,9 +17,9 @@
             <header class="hero">
                 <nav>
                 <ul>
-                    <li><a href="#">Login</a></li>
-                    <li><a href="#">Cadastre-se</a></li>
-                    <li><a href="#">Navegar</a></li>
+                    <li><button>Login</button></li>
+                    <li><button onclick="showModal()">Cadastre-se</button></li>
+                    <li><button>Navegar</button></li>
                 </ul>
                 </nav>
                 <div>
@@ -135,9 +135,50 @@ Você pode assistir a quantos filmes e séries quiser, quando e onde quiser, sem
                         <li><a href="#">Suporte</a></li>
                     </ul>
                 </nav>     
-            </footer>
+            </footer>  
             
         </div>
+        <article id="formule" class="formular">
+            <div id="modal" class="div-principal">
+                <header class="cabeca">
+                    <button onclick="hideModal()" class="fechar">X</button>
+                    <h2>Criar Conta</h2>
+                </header>
+                <form id="form" class="form">
+                    <div class="divisoes">
+                        <label for="username">Nome de usuário</label>
+                        <input type="text" id="username" />
+                        <i class="fas fa-exclamation-circle"></i>
+                        <i class="fas fa-check-circle"></i>
+                        <small class="mensagem">Usuário é obrigatório.</small>
+                    </div> 
+                    <div class="divisoes">
+                        <label for="email">Email</label>
+                        <input type="text" id="email" />
+                        <i class="fas fa-exclamation-circle"></i>
+                        <i class="fas fa-check-circle"></i>
+                        <small class="mensagem">Email incorreto.</small>
+                    </div> 
+                    <div class="divisoes">
+                        <label for="senha">Senha</label>
+                        <input type="password" id="senha" />
+                        <i class="fas fa-exclamation-circle"></i>
+                        <i class="fas fa-check-circle"></i>
+                        <small class="mensagem">Senha precisa de ao menos 7 caracteres.</small>
+                    </div> 
+                    <div class="divisoes">
+                        <label for="senhaconf">Confirmação de Senha</label>
+                        <input type="password" id="senhaconf" />
+                        <i class="fas fa-exclamation-circle"></i>
+                        <i class="fas fa-check-circle"></i>
+                        <small class="mensagem">Confirmação incorreta</small>
+                    </div>
+                    <button type="submit">Enviar</button>    
+                </form>
+            </div>
+        </article>
+        <script src="https://kit.fontawesome.com/fa53dfd8c9.js" crossorigin="anonymous"></script>
+        <script src="script.js"></script>
 
     </body>
 
