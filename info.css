@@ -1,0 +1,34 @@
+button {
+    color: aliceblue;
+    background-color: grey;
+    padding: 20px;
+    font-size: 20px;
+    width: 600px;
+    border: 1px solid;
+    position: relative;
+}
+
+.sinal {
+    position: absolute;
+    right: 5%;
+    top: 25%;
+    font-size: 30px;
+}
+
+.sinal1 {
+    position: absolute;
+    right: 5%;
+    top: 17%;
+    font-size: 35px;
+    display: none;
+}
+
+.resposta {
+    display: none;
+    background-color: grey;
+    width: 598px;
+    font-size: 20px;
+    color: aliceblue;
+    border: 1px solid;
+    text-align: center;
+}
