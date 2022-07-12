@@ -1,0 +1,18 @@
+.wpp {
+    position: absolute;
+    right: 50%;
+    bottom: 60%;
+}
+
+.fa-whatsapp {
+    font-size: 40px;
+    padding: 5px;
+    text-decoration: none;
+    color: white;
+}
+
+.linkar {
+    position: absolute;
+    background-color: rgb(78, 194, 194);
+    border-radius: 10px;
+}

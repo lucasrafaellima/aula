@@ -24,12 +24,12 @@ body {
 .hero nav ul {
     text-align: right;
     margin-right: 15px;
+    font-family: 'Poppins', sans-serif;
 }
 
 .hero nav li {
     display: inline-block;
     list-style: none;
-    
 }
 
 .hero nav button {
@@ -290,4 +290,88 @@ button:hover {
     position: absolute;
     width: auto;
     top: 0px;
+}
+
+/* duvidas */
+.duvidas-respostas {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+}
+
+.button {
+    color: rgb(0, 0, 0);
+    background-color: grey;
+    padding: 20px;
+    font-size: 20px;
+    width: 600px;
+    border: 1px transparent;
+    position: relative;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(238, 134, 16);
+    margin-top: 3px;
+}
+
+.button:hover {
+    color: white;
+}
+
+.sinal {
+    position: absolute;
+    right: 5%;
+    top: 25%;
+    font-size: 30px;
+}
+
+.sinal1 {
+    position: absolute;
+    right: 5%;
+    top: 17%;
+    font-size: 35px;
+    display: none;
+}
+
+.resposta {
+    display: none;
+    margin-left: 190px;
+    border-radius: 10px;
+    background-color: grey;
+    width: 598px;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    border: 1px solid rgb(238, 134, 16);
+    text-align: center;
+    background-color: rgb(238, 134, 16);
+    font-family: 'Poppins', sans-serif; 
+}
+
+.wpp {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    right: 10%;
+    bottom: -235%;
+}
+
+.fa-whatsapp {
+    font-size: 40px;
+    padding: 5px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    text-shadow: none;
+    cursor: pointer;
+}
+
+.linkar {
+    /*background-color: rgb(78, 194, 194);*/
+    padding-top: 24px;
+    padding-bottom: 4px;
+    background-image: linear-gradient(to top, #0ba360 0%, #3cba92 100%);
+    border-radius: 10px;
+}
+
+.contato {
+    font-family: 'Poppins', sans-serif;    
 }
