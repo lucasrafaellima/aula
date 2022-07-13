@@ -19,6 +19,7 @@ body {
     background-size: cover;
     background-repeat: repeat;
     background-position: right bottom;
+    text-align: center;
 }
 
 .hero nav ul {
@@ -341,8 +342,8 @@ button:hover {
     width: 598px;
     font-size: 20px;
     color: rgb(0, 0, 0);
-    border: 1px solid rgb(238, 134, 16);
     text-align: center;
+    border: 1px solid rgb(238, 134, 16);
     background-color: rgb(238, 134, 16);
     font-family: 'Poppins', sans-serif; 
 }
