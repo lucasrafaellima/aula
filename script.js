@@ -3,14 +3,33 @@ function showModal() {
     element.classList.add("show-modal");
 }
 
-//abre formulario
+function showSobre() {
+    var element = document.getElementById("criador");
+    element.classList.add("show-sobre");
+}
+
+function showLogin() {
+    var element = document.getElementById("formule1");
+    element.classList.add("show-login");
+}
+//abre formularios
 
 function hideModal() {
     var element = document.getElementById("formule");
     element.classList.remove("show-modal");
 }
 
-//fecha formulario
+function hideSobre() {
+    var element = document.getElementById("criador");
+    element.classList.remove("show-sobre");
+}
+
+function hideLogin() {
+    var element = document.getElementById("formule1");
+    element.classList.remove("show-login");
+}
+
+//fecha formularios
 
 const form = document.getElementById("form");
 const username = document.getElementById("username");
@@ -65,15 +84,15 @@ function checkInputs() {
         const formIsValid = [...formControls].every(formControl => {
             return (formControl.className === "divisoes success"); 
         });
+    
 }
 
 function setErrorFor(input, message) {
     const formControl = input.parentElement;
     const small = formControl.querySelector("small");  
     
-    small.innrText = message;
+    small.innerText = message;
     formControl.className = "divisoes error";
-    
 }
 
 function setSuccessFor(input) {
@@ -87,6 +106,75 @@ function checkEmail(email) {
       email
     );
   }
+
+  function logar() {
+    const email1 = document.getElementById("email1");
+    const mensagem = document.getElementsByClassName("divisoes1")[0];
+    const email2 = email1.value;
+    if (email2 != "") {
+        mensagem.classList.add("divisoes1 success");
+    }
+  }
+  //formulario cadastro
+  /*
+  const form1 = document.getElementById("form1");
+  const email1 = document.getElementById("email1");
+  const senha1 = document.getElementById("senha1");
+
+  form1.addEventListener("submit1", (e) => {
+    e.preventDefault();
+
+    checkInputs1();
+  });
+
+  function checkInputs1() {
+    const email1Value = email1.value;
+    const senha1Value = senha1.value;
+
+    if (email1Value == "") {
+        setErrorFor(email1, "O email é obrigatório");
+    } else if (!checkEmail(email1Value)) {
+        setErrorFor(email1, "Por favor, insira um email válido.");
+    } else {
+        setSuccessFor(email1);
+    }
+
+    if (senha1Value == "") {
+        setErrorFor(senha1, "A senha é obrigatória.");
+    } else if(senha1Value.length < 7) {
+        setErrorFor(senha1, "A senha precisa ter no mínimo 7 caracteres.");   
+    } else {
+        setSuccessFor(senha1);        
+    }
+
+    const form1Controls = form1.querySelectorAll(".divisoes1");
+
+        const form1IsValid = [...form1Controls].every(form1Control => {
+            return (form1Control.className === "divisoes1 success"); 
+        });
+  }
+  
+function setErrorFor(input, message) {
+    const form1Control = input.parentElement;
+    const small = form1Control.getElementsByClassName("mensagem1");  
+    
+    small.innerText = message;
+    form1Control.className = "divisoes1 error";
+}
+
+function setSuccessFor(input) {
+    const form1Control = input.parentElement;
+
+    form1Control.className = "divisoes1 success";
+}
+
+function checkEmail(email1) {
+    return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(
+      email1
+    );
+  }
+  */
+  //login
 
   function mostra1() {
     let sinalizar = document.getElementsByClassName("sinal")[0];
@@ -178,3 +266,4 @@ function mostra6() {
     }
 }
 
+//informacoes site

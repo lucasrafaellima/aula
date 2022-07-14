@@ -17,9 +17,9 @@
             <header class="hero">
                 <nav>
                 <ul>
-                    <li><button>Login</button></li>
+                    <li><button onclick="showLogin()">Login</button></li>
                     <li><button onclick="showModal()">Cadastre-se</button></li>
-                    <li><button>Navegar</button></li>
+                    <li><button onclick="showSobre()">sobre</button></li>
                 </ul>
                 </nav>
                 <div>
@@ -178,21 +178,21 @@
                         <input type="text" id="username" />
                         <i class="fas fa-exclamation-circle"></i>
                         <i class="fas fa-check-circle"></i>
-                        <small class="mensagem">Usuário é obrigatório.</small>
+                        <small class="mensagem">Usuário é obrigatório</small>
                     </div> 
                     <div class="divisoes">
                         <label for="email">Email</label>
                         <input type="text" id="email" />
                         <i class="fas fa-exclamation-circle"></i>
                         <i class="fas fa-check-circle"></i>
-                        <small class="mensagem">Email incorreto.</small>
+                        <small class="mensagem">Email incorreto</small>
                     </div> 
                     <div class="divisoes">
                         <label for="senha">Senha</label>
                         <input type="password" id="senha" />
                         <i class="fas fa-exclamation-circle"></i>
                         <i class="fas fa-check-circle"></i>
-                        <small class="mensagem">Senha precisa de ao menos 7 caracteres.</small>
+                        <small class="mensagem">Senha precisa de ao menos 7 caracteres</small>
                     </div> 
                     <div class="divisoes">
                         <label for="senhaconf">Confirmação de Senha</label>
@@ -203,6 +203,42 @@
                     </div>
                     <button type="submit">Enviar</button>    
                 </form>
+            </div>
+        </article>
+        <article id="formule1" class="formular1">
+            <div id="modal1" class="div-principal1">
+                <header class="cabeca1">
+                    <button onclick="hideLogin()" class="fechar1">X</button>
+                    <h2>Login</h2>
+                </header>
+                <form id="form1" class="form1">
+                    <div class="divisoes1">
+                        <label for="email1">Email</label>
+                        <input type="text" id="email1" />
+                        <i class="fas fa-exclamation-circle"></i>
+                        <i class="fas fa-check-circle"></i>
+                        <small class="mensagem1">Email incorreto</small>
+                    </div> 
+                    <div class="divisoes1">
+                        <label for="senha1">Senha</label>
+                        <input type="password" id="senha1" />
+                        <i class="fas fa-exclamation-circle"></i>
+                        <i class="fas fa-check-circle"></i>
+                        <small class="mensagem1">Senha precisa de ao menos 7 caracteres</small>
+                    </div> 
+                    <button type="submit1" onclick="logar()">Enviar</button>    
+                </form>
+            </div>
+        </article>
+        <article class="article-criador" id="criador">
+            <div class="div-criador">
+                <header class="cabeca1">
+                    <button onclick="hideSobre()" class="fechar">X</button>
+                    <h3 class="sobre-site">Sobre o Criador</h3>
+                </header>
+                <p class="pequena-descricao">
+                    Olá, me chamo Lucas Rafael Lima e criei este site de animes para a disciplina de Tecnologias Web do Ifal. O site é composto por HTML, CSS e JavaScript, com o objetivo de ser funcional e interessante para o público no geral, espero que gostem! 
+                </p>
             </div>
         </article>
         <script src="https://kit.fontawesome.com/fa53dfd8c9.js" crossorigin="anonymous"></script>

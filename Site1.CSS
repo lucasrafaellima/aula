@@ -293,6 +293,138 @@ button:hover {
     top: 0px;
 }
 
+/* modal1 */
+
+.formular1 {
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Poppins', sans-serif;
+    position: fixed;
+    top: 0%;
+    left: 0px;
+    background-color: rgba(53, 53, 53, 0.6);
+    z-index: 2000;
+    /*teste*/
+    transform: scale(1.1);
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility 0.25s ease-in-out, transform 0.25s
+    ease-in-out, opacity 0.25s ease-in-out;
+}
+
+.show-login {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
+}
+
+.div-principal1 {
+    display: block;
+    margin-left: 35%;
+    margin-top: 2%;
+    justify-content: center;
+    align-items: center;
+    background-color: #fafafa;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    width: 400px;
+    max-width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+
+.cabeca1 {
+    background: linear-gradient(90deg, #de2100 0%, #ffbb00 100%);
+    padding: 20px;
+}
+
+form {
+    padding: 20px;
+}
+
+.divisoes1 {
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    position: relative;
+}
+
+.divisoes1 label {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.divisoes1 input {
+    border: 2px solid #f0f0f0;
+    display: block;
+    border-radius: 10px;
+    font-size: 10px;
+    width: 95%;
+    padding: 10px;
+}
+
+.divisoes1 i {
+    position: absolute;
+    top: 32px;
+    right: 5px;
+    visibility: hidden;
+}
+
+.divisoes1 small {
+    position: absolute;
+    bottom: 2;
+    left: 0;
+    visibility: hidden;
+}
+
+button {
+    background-color: rgb(228, 152, 13);
+    border: 2px solid rgb(228, 152, 13);
+    color: #fff;
+    width: 101%;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+button:hover {
+    color: black;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);;
+}
+
+.divisoes1.success input {
+    border-color: #2ecc71;
+}
+
+.divisoes1.error input {
+    border-color: #e74c3c;
+}
+
+.divisoes1.success i.fa-check-circle {
+    color: #2ecc71;
+    visibility: visible;
+}
+
+.divisoes1.error i.fa-exclamation-circle {
+    color: #e74c3c;
+    visibility: visible;
+}
+
+.divisoes1.error small {
+    visibility: visible;
+    color: #e74c3c;
+}
+
+.fechar1 {
+    right: 0px;
+    background-color: transparent;
+    position: absolute;
+    width: auto;
+    top: 0px;
+}
+
 /* duvidas */
 .duvidas-respostas {
     margin-bottom: 10px;
@@ -375,4 +507,57 @@ button:hover {
 
 .contato {
     font-family: 'Poppins', sans-serif;    
+}
+
+/* sobre o criador */
+
+.article-criador {
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Poppins', sans-serif;
+    position: fixed;
+    top: 0%;
+    left: 0px;
+    background-color: rgba(53, 53, 53, 0.6);
+    z-index: 2000;
+    /* teste */
+    transform: scale(1.1);
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility 0.25s ease-in-out, transform 0.25s
+    ease-in-out, opacity 0.25s ease-in-out;
+}
+
+.div-criador {
+    display: block;
+    margin-left: 35%;
+    margin-top: 2%;
+    justify-content: center;
+    background-color: #fafafa;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    width: 400px;
+    max-width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.cabeca1 {
+    background: linear-gradient(90deg, #de2100 0%, #ffbb00 100%);
+    padding: 20px;
+    font-size: 20px;
+}
+
+.pequena-descricao {
+    padding: 10px;
+    text-align: left;
+}
+
+.show-sobre {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
 }
