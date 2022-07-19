@@ -107,19 +107,11 @@ function checkEmail(email) {
     );
   }
 
-  function logar() {
-    const email1 = document.getElementById("email1");
-    const mensagem = document.getElementsByClassName("divisoes1")[0];
-    const email2 = email1.value;
-    if (email2 != "") {
-        mensagem.classList.add("divisoes1 success");
-    }
-  }
   //formulario cadastro
-  /*
-  const form1 = document.getElementById("form1");
-  const email1 = document.getElementById("email1");
-  const senha1 = document.getElementById("senha1");
+/*
+  const form1 = document.getElementById('form1');
+  const email1 = document.getElementById('email1');
+  const senha1 = document.getElementById('senha1');
 
   form1.addEventListener("submit1", (e) => {
     e.preventDefault();
@@ -128,23 +120,23 @@ function checkEmail(email) {
   });
 
   function checkInputs1() {
-    const email1Value = email1.value;
-    const senha1Value = senha1.value;
+    const email1Value = email1.value.trim();
+    const senha1Value = senha1.value.trim();
 
-    if (email1Value == "") {
-        setErrorFor(email1, "O email é obrigatório");
-    } else if (!checkEmail(email1Value)) {
-        setErrorFor(email1, "Por favor, insira um email válido.");
+    if (email1Value === "") {
+        setErrorFor1(email1, "O email é obrigatório");
+    } else if (!checkEmail1(email1Value)) {
+        setErrorFor1(email1, "Por favor, insira um email válido.");
     } else {
-        setSuccessFor(email1);
+        setSuccessFor1(email1);
     }
 
-    if (senha1Value == "") {
-        setErrorFor(senha1, "A senha é obrigatória.");
+    if (senha1Value === "") {
+        setErrorFor1(senha1, "A senha é obrigatória.");
     } else if(senha1Value.length < 7) {
-        setErrorFor(senha1, "A senha precisa ter no mínimo 7 caracteres.");   
+        setErrorFor1(senha1, "A senha precisa ter no mínimo 7 caracteres.");   
     } else {
-        setSuccessFor(senha1);        
+        setSuccessFor1(senha1);        
     }
 
     const form1Controls = form1.querySelectorAll(".divisoes1");
@@ -154,26 +146,27 @@ function checkEmail(email) {
         });
   }
   
-function setErrorFor(input, message) {
+function setErrorFor1(input, message) {
     const form1Control = input.parentElement;
-    const small = form1Control.getElementsByClassName("mensagem1");  
+    const small1 = form1Control.getElementsByClassName("mensagem1");  
     
-    small.innerText = message;
+    small1.innerText = message;
     form1Control.className = "divisoes1 error";
 }
 
-function setSuccessFor(input) {
+function setSuccessFor1(input) {
     const form1Control = input.parentElement;
 
     form1Control.className = "divisoes1 success";
 }
 
-function checkEmail(email1) {
+function checkEmail1(email1) {
     return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(
       email1
     );
   }
-  */
+
+*/
   //login
 
   function mostra1() {
